@@ -7,12 +7,17 @@
     <title>Quiz Board</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <script src="quiz.js"></script>
+    
     
 </head>
 <body>
-    <form name ="quiz" id="quiz">
+    <div class="jumbotron">
+        <h2>WELCOME TO THE QUIZ BOARD!!<strong></strong></h2><br>
+        <h1>Test your Javascript Knowledge!</h1><br></p>
+    </div>
+     <form name ="quiz" id="quiz">
         <div>
+            <h2>Answer all the questions below <strong></strong></h2><br>
             <p>1.HTML uses?<strong></strong></p>
             <p><input type="radio" name="q1" value="Labels">A. Labels</p>
             <p><input type="radio" name="q1" value="Tabs">B. Tabs</p>
@@ -49,7 +54,10 @@
         </div>
 
 
-        <input type="button" name="" value="Finished!" onclick="check()">
+        <input type="button" name="" value="Finished!"id="button" onclick="check()">
     </form>
+
+ <p id="result"></p>  
+ <script src="quiz.js"></script> 
 </body>
 </html>
