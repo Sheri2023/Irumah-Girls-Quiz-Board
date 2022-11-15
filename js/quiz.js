@@ -6,11 +6,11 @@ function merit() {
   var percentage = score / 25 * 100;
   $("#percentage").text("Your percentage is " + percentage + "%");
   if (percentage >= 80) {
-    $("#remark").text("You have Excellently passed");
+    $("#remark").text("You have Excellently passed!");
   } else if (percentage >= 50) {
-    $("#remark").text("You have fairly passed");
+    $("#remark").text("You have fairly passed!");
   } else {
-    $("#remark").text("You've scored poorly. You need to retake the test");
+    $("#remark").text("You have scored poorly. You need to retake the test!");
   }
   $("button#submit").click(function(event) {
     var q1 = $("input:radio[name=q1]:checked").val();
