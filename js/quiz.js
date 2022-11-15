@@ -2,6 +2,10 @@ var score = 0;
 var answer = ["A", "B", "C", "D"];
 var point = 5;
 
+function result() {
+  var score=0
+}
+
 function merit() {
   var percentage = score / 25 * 100;
   $("#percentage").text("Your percentage is " + percentage + "%");
