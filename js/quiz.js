@@ -1,11 +1,7 @@
+// Front-end logic
 var score = 0;
 var answer = ["A", "B", "C", "D"];
 var point = 5;
-
-function result() {
-  var score=0
-}
-
 function merit() {
   var percentage = score / 25 * 100;
   $("#percentage").text("Your percentage is " + percentage + "%");
@@ -16,6 +12,7 @@ function merit() {
   } else {
     $("#remark").text("You have scored poorly. You need to retake the test!");
   }
+  // back end logic
   $("button#submit").click(function(event) {
     var q1 = $("input:radio[name=q1]:checked").val();
     var q2 = $("input:radio[name=q2]:checked").val();
