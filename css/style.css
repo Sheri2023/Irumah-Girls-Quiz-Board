@@ -27,8 +27,7 @@ H2 {
     font:weight 30px;
     text-align: center;
     font-style: italic;
-    text-decoration: wavy;
-}
+    }
 .jumbotron{
     background: #648880;
    background: linear-gradient(to right, #f6f1d3, #648880 85%, #293f50);
