@@ -1,27 +1,47 @@
-.panel-footer {
-    background-color: crimson;
-  }
-  
-  body {
+body {
+    background-color:grey;
+    color: black;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-left: 3rem;
+}
+.button {
+    background-color:crimson;
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+    font-family: 'Times New Roman';
+    font-weight:bolder ;
+    text-decoration-color: blueviolet;
+    border-block-color:red ;
+}
+    
+Body {
     background:#466368 ;
-    background: -webkit-linear-gradient(#648880, #293f50);
-    background:    -moz-linear-gradient(#648880, #293f50);
-    background:         linear-gradient(#648880, #293f50);
+    background:-webkit-linear-gradient(#648880, #293f50) ;
+    background:-moz-linear-gradient(#648880, #293f50) ;
+    background:linear-gradient(#648880, #293f50) ;
+}
+H2 {
+    font-size: larger;
+    font:weight 30px;
+    text-align: center;
+    font-style: italic;
+    text-decoration: wavy;
+}
+.jumbotron{
+    background: #648880;
+   background: linear-gradient(to right, #f6f1d3, #648880 85%, #293f50);
+   text-align: center;
   }
   
-  .jumbotron{
-    background: #886472;
-   background: linear-gradient(to right, #f6f1d3, #648880 85%, #293f50);
-  }
   #well1 {
     font-family: 'Times New Roman',cursive;
   font-family: 'Special Elite', cursive;
   font-family: 'Roboto Mono', monospace;
+  text-align: center;
   }
   
   .well {
     background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
-  }
-  .panel-footer {
-    background-color: crimson;
   }

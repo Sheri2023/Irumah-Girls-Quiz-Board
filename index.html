@@ -7,57 +7,79 @@
     <title>Quiz Board</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    
-    
 </head>
 <body>
     <div class="jumbotron">
-        <h2>WELCOME TO THE QUIZ BOARD!!<strong></strong></h2><br>
-        <h1>Test your Javascript Knowledge!</h1><br></p>
+        <h2><strong>THE QUIZ BOARD!!</strong></h2><br>
+        <h1>Test your HTML,CSS and Javascript Knowledge!</h1>
+        <h1>Quiz Rules</h1>
+        <p><li>Please fill out your name and email</li>
+           <li>The Questions are Multiple choice,check the boxes and make sure all the questions are answered correctly</li>
+           <li>Submit your work only if you are done!</li></p>
     </div>
-     <form name ="quiz" id="quiz">
-        <div>
-            <h2>Answer all the questions below <strong></strong></h2><br>
-            <p>1.HTML uses?<strong></strong></p>
-            <p><input type="radio" name="q1" value="Labels">A. Labels</p>
-            <p><input type="radio" name="q1" value="Tabs">B. Tabs</p>
-            <p><input type="radio" name="q1" value="Tags">C. Tags</p>
-            <p><input type="radio" name="q1" value="Quotes">D. Quotes</p>
+    <div class="well">
+        <h2>Please fill in your credentials</h2>
+        Name:<input type="text" id="name" name="firstname" value="">
+        Date of test: <input type="date" name="date" value="">
+        Email:<input type="email" id="email" name="email" value="">
+        <input type="submit" id="btn1" class="btn btn-primary" value="submit">
+    
+       <form name="quiz" id="quiz">
+         <div>
+         <p>1.HTML uses?(20mks)</p>
+            <p><input type="radio" name="0" value="A">A. Labels </p>
+            <p><input type="radio" name="0" value="B">B. Tabs</p>
+            <p><input type="radio" name="0" value="C">C. Tags</p>
+            <p><input type="radio" name="0" value="D">D. Quotes</p>
         </div>
+
         <div>
-            <p>2.Javascript is a_______language?<strong></strong></p>
-            <p><input type="radio" name="q2" value="Programming">A. Programming</p>
-            <p><input type="radio" name="q2" value="Scripting">B. Scripting</p>
-            <p><input type="radio" name="q2" value="Development">C. Development</p>
-            <p><input type="radio" name="q2" value="Application">D. Application</p>
+         <p>2.Javascript is a_______language?<strong></strong>(20mks)</p>
+            <p><input type="radio" name="q2" value="A">A. Programming</p>
+            <p><input type="radio" name="q2" value="B">B. Scripting</p>
+            <p><input type="radio" name="q2" value="C">C. Development</p>
+            <p><input type="radio" name="q2" value="D">D. Application</p>
         </div>
+
         <div>
-            <p>3.CSS stands for?<strong></strong></p>
-            <p><input type="radio" name="q3" value="Code Style Sheet">A. Code Style Sheet </p>
-            <p><input type="radio" name="q3" value="Coding Style Sheet">B. Coding Style Sheet</p>
-            <p><input type="radio" name="q3" value="Cascading Sheet Style">C. Cascading Sheet Style</p>
-            <p><input type="radio" name="q3" value="Cascading Style Sheet">D. Cascading Style Sheet</p>
+            <p>3.CSS stands for?<strong></strong>(20mks)</p>
+            <p><input type="radio" name="q3" value="A">A. Code Style Sheet </p>
+            <p><input type="radio" name="q3" value="B">B. Coding Style Sheet</p>
+            <p><input type="radio" name="q3" value="C">C. Cascading Sheet Style</p>
+            <p><input type="radio" name="q3" value="D">D. Cascading Style Sheet</p>
         </div>
+
         <div>
-            <p>4.A JavaScript file has an extension name of?<strong></strong></p>
-            <p><input type="radio" name="q4" value=".jscp">A. .jscp </p>
-            <p><input type="radio" name="q4" value=".js">B. .js</p>
-            <p><input type="radio" name="q4" value=".css">C. .css</p>
-            <p><input type="radio" name="q4" value=".Jp">D. .Jp</p>
+            <p>4.A JavaScript file has an extension name of?<strong></strong>(20mks)</p>
+            <p><input type="radio" name="q4" value="A">A. .jscp </p>
+            <p><input type="radio" name="q4" value="B">B. .js</p>
+            <p><input type="radio" name="q4" value="C">C. .css</p>
+            <p><input type="radio" name="q4" value="D">D. .Jp</p>
         </div>
+
         <div>
-            <p>5.In JS,what do we use for calling the expression for function definition?<strong></strong></p>
-            <p><input type="radio" name="q5" value="Function Prototype">A. Function Prototype </p>
-            <p><input type="radio" name="q5" value="Function declaration">B. Function declaration</p>
-            <p><input type="radio" name="q5" value="Function Literal">C. Function Literal</p>
+            <p>5.In JS,what do we use for calling the expression for function definition?<strong></strong>(20mks)</p>
+            <p><input type="radio" name="q5" value="A">A. Function Prototype </p>
+            <p><input type="radio" name="q5" value="B">B. Function declaration</p>
+            <p><input type="radio" name="q5" value="C">C. Function Literal</p>
             <p><input type="radio" name="q5" value="None of the above">D. None of the above</p>
         </div>
-
-
-        <input type="button" name="" value="Finished!"id="button" onclick="check()">
+        <button type="submit" id="submit" class="btn btn-info">Submit</button>
     </form>
-
- <p id="result"></p> 
+    <div class="card">
+        <div class="card-footer">
+          <h3>Total: 5 questions</h3>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="total">
+          <h2>Results</h2>
+          <p id="results"></p>
+          <p id="percentage"></p>
+          <p id="remark"></p>
+        <button type="button" class="btn btn-info" name="button" id="retake">Retake Test</button>
+        </div>
+    </div>
  <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js" integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script> 
  <script src="js/quiz.js"></script> 
 </body>
